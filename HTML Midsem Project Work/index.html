@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Semantic HTML Structure</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+  <header>
+    <h1>JoyHouse</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Schedule</a>
+    <a href="#">Register</a>
+  </nav>
+
+  <main>
+    <img src="pexels-pixabay-433452.jpg";
+    ” alt=“descriptive text”>
+    <section id="home">
+      <h2>Home Area</h2>
+      <p>Join us here on this exciting journey of an amazing adventure</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Section</h2>
+      <p>This is the contact section of the webpage.</p>
+      <button id="showInfoBtn">Show More Info</button>
+      <p id="extraInfo" class="hidden">Here is some extra information about JoyHous.
+        Contact us to receive more updates on our page.
+      </p>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2024 Event Scheduler</p>
+  </footer>
+
+
+  <script>
+    document.getElementById('showInfoBtn').addEventListener('click', function() {
+      const extraInfo = document.getElementById('extraInfo');
+      extraInfo.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
