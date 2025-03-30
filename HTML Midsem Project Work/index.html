@@ -1,54 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Semantic HTML Structure</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Event - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-    
-  <header>
-    <h1>JoyHouse</h1>
-  </header>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Schedule</a>
-    <a href="#">Register</a>
-  </nav>
 
-  <main>
-    <img src="pexels-pixabay-433452.jpg";
-    ” alt=“descriptive text”>
-    <section id="home">
-      <h2>Home Area</h2>
-      <p>Join us here on this exciting journey of an amazing adventure</p>
-    </section>
+    <header>
+        <h1>Professional Event</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about-info">About</a></li> 
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="contact">
-      <h2>Contact Section</h2>
-      <p>This is the contact section of the webpage.</p>
-      <button id="showInfoBtn">Show More Info</button>
-      <p id="extraInfo" class="hidden">Here is some extra information about JoyHous.
-        Contact us to receive more updates on our page.
-      </p>
-    </section>
-  </main>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Welcome to the Premier Event of the Year!</h2>
+                <p>Experience an inspiring journey of learning, networking, and growth with industry leaders.</p>
+                <a href="register.html" class="btn-primary">Register Now</a>
+            </div>
+        </section>
 
+        <section id="about">
+            <h2>About the Event</h2>
+            <p>Bringing together experts and enthusiasts from around the world to discuss trends, innovations, and future opportunities in the industry.</p>
+        </section>
 
-  <footer>
-    <p>&copy; 2024 Event Scheduler</p>
-  </footer>
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <ul>
+                <li><strong>Day 1:</strong> Workshops and Networking</li>
+                <li><strong>Day 2:</strong> Keynotes and Panels</li>
+                <li><strong>Day 3:</strong> Closing Ceremony and Gala</li>
+            </ul>
+        </section>
 
+        <section id="speakers">
+            <h2>Featured Speakers</h2>
+            <div class="speakers-grid">
+                <div class="speaker">
+                    <img src="wallpaperflare.com_wallpaper (1).jpg" alt="Speaker 1">
+                    <p>Speaker 1 - Topic</p>
+                </div>
+                <div class="speaker">
+                    <img src="wallpaperflare.com_wallpaper (3).jpg" alt="Speaker 2">
+                    <p>Speaker 2 - Topic</p>
+                </div>
+                
+            </div>
+        </section>
 
-  <script>
-    document.getElementById('showInfoBtn').addEventListener('click', function() {
-      const extraInfo = document.getElementById('extraInfo');
-      extraInfo.classList.toggle('hidden');
-    });
-  </script>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email us at <a href="mailto:info@event.com">info@event.com</a> or call us at 123-456-7890.</p>
+        </section>
 
+        <aside class="left-aside">
+            <h3>Professional Resources</h3>
+            <p>Explore our collection of articles, case studies, and best practices to enhance your experience.</p>
+            <p>Check out our blog for insights and updates from industry experts.</p>
+            <p>Join our community for networking and collaboration opportunities.</p>
+        </aside>
+
+        <aside class="right-aside" id="about-info">
+            <h3>About This Event</h3>
+            <p>This event aims to connect industry leaders, innovators, and professionals to share knowledge and foster growth.</p>
+            <p>Join us for interactive sessions, panel discussions, and networking opportunities.</p>
+            <p>Don't miss the chance to gain insights from top speakers and engage with peers.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Joyhouse. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook" class="facebook" style="color: #3b5998"><i class="bx bxl-facebook"></i></a>
+          <a href="#" aria-label="X" class="x" style="color: #252020;"><i class="bx bxl-xing"></i></a>
+          <a href="#" aria-label="Instagram" class="instagram" style="color: #c32aa3"><i class="bx bxl-instagram"></i></a>
+          <a href="#" aria-label="YouTube" class="youtube" style="color: #bf2626;"><i class="bx bxl-youtube"></i></a>
+          <a href="#" aria-label="#000000" class="tiktok"><i class="bx bxl-tiktok"></i></a>
+      </div>
+    </footer>
 </body>
 </html>
