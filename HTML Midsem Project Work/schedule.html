@@ -1,103 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Home Page</title>
-        <style>
-            table {
-                border-collapse: collapse;
-                border: 2px solid rgb(140 140 140);
-                font-family: sans-serif;
-                font-size: 0.8rem;
-                letter-spacing: 1px;
-            }
-            caption {
-                caption-side: bottom;
-                padding: 10px;
-                font-weight: bold;
-            }
-            thead,tfoot {
-                background-color: rgb(228 240 245);
-            }
-            th,td {
-                border: 1px solid rgb(160 160 160);
-                padding: 8px 10px;
-            }
-            td:last-of-type {
-                text-align: center;
-            }
-            
-            tbody > tr:nth-of-type(even) {
-                background-color: rgb(237 238 242);
-            }
-            
-            tfoot th {
-                text-align: right;
-            }
-            tfoot td {
-                font-weight: bold;
-            }
-            
-            </style>
-            </head>
-            
-            <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Event - Schedule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Joyhouse Event Schedule</h1>
         <nav>
-            <img src="" alt="Schedule Banner">
-    
             <ul>
-                <li><a href="#">Back to Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    <table>
-        <caption>
-            Event Schedule Table
-        </caption>
-        <thead>
-            <tr>
-                <th scope="col">Person / Speaker</th>
-                <th scope="col">Activities</th>
-                <th scope="col">Time(pm)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">James</th>
-                <td>Karaoke Night</td>
-                <td>4:30</td>
-            </tr>
-            <tr>
-                <th scope="row">Sarah</th>
-                <td>Awards night</td>
-                <td>5:00</td>
-            </tr>
-            <tr>
-                <th scope="row">John</th>
-                <td>Games night</td>
-                <td>6:30</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th scope="row" colspan="2">Average time allowed</th>
-                <td>4 hrs</td>
-            </tr>
-        </tfoot>
-    </table>
+    </header>
+
+    <main>
+        <section id="schedule-section">
+            <h2>Event Schedule</h2>
+            <p>Join us for three days of insightful sessions, networking opportunities, and industry insights.</p>
+            <div class="schedule-day">
+                <h3>Day 1: Workshops and Networking</h3>
+                <ul>
+                    <li><strong>9:00 AM:</strong> Registration and Opening Remarks</li>
+                    <li><strong>10:30 AM:</strong> Workshop - Emerging Technologies</li>
+                    <li><strong>1:00 PM:</strong> Networking Lunch</li>
+                    <li><strong>3:00 PM:</strong> Panel Discussion - Industry Challenges</li>
+                </ul>
+            </div>
+            <div class="schedule-day">
+                <h3>Day 2: Keynotes and Panels</h3>
+                <ul>
+                    <li><strong>9:00 AM:</strong> Keynote Speech by Industry Leader</li>
+                    <li><strong>11:00 AM:</strong> Breakout Sessions</li>
+                    <li><strong>1:00 PM:</strong> Lunch</li>
+                    <li><strong>2:30 PM:</strong> Interactive Panel Discussion</li>
+                </ul>
+            </div>
+            <div class="schedule-day">
+                <h3>Day 3: Closing Ceremony and Gala</h3>
+                <ul>
+                    <li><strong>10:00 AM:</strong> Closing Remarks and Future Outlook</li>
+                    <li><strong>12:00 PM:</strong> Networking Brunch</li>
+                    <li><strong>7:00 PM:</strong> Gala Dinner and Award Ceremony</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>Author: Frank Kofi</p>
-        <p>&copy; 2024 My Website</p>
+        <p>&copy; 2024 Professional Event. All rights reserved.</p>
     </footer>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
